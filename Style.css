@@ -1,0 +1,240 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#nevBar {
+  display: flex;
+  background: #ecf0f1;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0px 2px 8px 0 #bdc3c7;
+  position: sticky;
+  top: 0px;
+}
+
+.logo {
+  margin: 2px 0px;
+  width: 282px;
+  height: 108px;
+}
+
+#navLinks ul {
+  display: flex;
+}
+#navLinks ul li {
+  margin: 0px 15px;
+  list-style: none;
+}
+#navLinks ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: black;
+}
+#navLinks ul li a:hover {
+  text-decoration: underline;
+}
+
+.countryName {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.countryName span {
+  margin: 21px 0px;
+  font-size: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-bottom: 2px solid black;
+}
+.countryName select {
+  border: none;
+  padding: 7px 2px;
+  background: #bdc3c7;
+  outline: none;
+  color: rgb(0, 0, 0);
+  margin: 9px 0px;
+  border-radius: 5px;
+}
+.uniData {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px 20px;
+}
+
+.container {
+  width: 400px;
+  margin: 4px 4px;
+  display: flex;
+  flex-direction: column;
+  background: #bdc3c7;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 8px 7px;
+}
+.container:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  background: #05b14d;
+  color: white;
+}
+.nameOfUni {
+  font-size: 20px;
+  margin: 6px 0px;
+  padding: 0px 12px;
+  font-family: sans-serif;
+}
+.container label {
+  font-size: 18px;
+  font-family: sans-serif;
+  margin: 0px 10px;
+}
+.uniDetails {
+  font-size: 18px;
+  font-family: sans-serif;
+}
+.container a {
+  text-decoration: none;
+  color: white;
+  width: 100px;
+  height: 20px;
+  background: #2c3e50;
+  margin: 5px 10px;
+  text-align: center;
+  padding: 5px 4px;
+  border-radius: 16px;
+}
+
+/* About page */
+#profile {
+  margin: 20px 10px;
+  display: flex;
+}
+#profile img {
+  width: 380px;
+}
+.profileDetail {
+  margin: 0px 9px;
+  padding: 15px 26px;
+}
+.profileDetail h2 {
+  font-size: 30px;
+  margin: 10px 0px;
+}
+.profileDetail p {
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+#info {
+  display: flex;
+  margin: 20px 0px;
+  flex-direction: column;
+}
+.infoDetails a {
+  text-decoration: none;
+  color: #2c3e50;
+}
+.infoDetails a span {
+  font-size: 24px;
+  margin: 0px 20px;
+}
+.infoDetails a i {
+  font-size: 24px;
+  margin: 10px 0px;
+  color: #2c3e50;
+}
+
+#footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ecf0f1;
+  margin-top: 10px;
+}
+#footer span {
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 5px 10px;
+}
+#footerImage {
+  margin: 10px 0px;
+  width: 38px;
+  height: 38px;
+  animation: mymove 5s infinite;
+}
+@keyframes mymove {
+  50% {
+    transform: rotate(180deg);
+  }
+}
+@media only screen and (max-width: 900px) {
+  .container {
+    width: 90%;
+    margin: 7px 6px;
+  }
+  #profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .logo {
+    width: 181px;
+    height: 69px;
+  }
+  #navLinks ul li {
+    margin: 0px 7px;
+  }
+  .countryName span {
+    font-size: 20px;
+  }
+  .container {
+    margin: 8px 4px;
+  }
+  .uniData {
+    margin: 10px 0px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .nameOfUni {
+    font-size: 4vw;
+    margin: 5px 0px;
+    padding: 0px 0px;
+  }
+  #profile img {
+    width: 100%;
+  }
+  .profileDetail p {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  .profileDetail {
+    margin: 0px 0px;
+    padding: 15px 3px;
+  }
+}
+@media only screen and (max-width: 370px) {
+  #navLinks ul li {
+    margin: 0px 3px;
+  }
+  #navLinks ul li a {
+    font-size: 15px;
+  }
+  .logo {
+    width: 119px;
+    height: 52px;
+  }
+  .countryName span {
+    font-size: 15px;
+  }
+  #footer span {
+    font-size: 12px;
+  }
+  #footerImage {
+    width: 30px;
+    height: 30px;
+  }
+}
